@@ -4,11 +4,6 @@ on:
   pull_request:
     types: 
       - opened
-    #Event types with filters
-    branches:
-      - main
-      - dev*
-      - dev/*
   # Manual execution
   workflow_dispatch:
   # Event/Action Filters
