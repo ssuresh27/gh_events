@@ -1,5 +1,17 @@
 name: Events Demo 1
-on: ...
+on:
+  # Event/Action Types
+  pull_request:
+    types: 
+      - opened
+  # Manual execution
+  workflow_dispatch:
+  # Event/Action Filters
+  push:
+    branches:
+      - main
+      - dev*
+      - dev/*
 jobs:
   deploy:
     runs-on: ubuntu-latest
